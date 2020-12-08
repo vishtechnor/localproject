@@ -1,0 +1,34 @@
+<html>
+<head>
+<script>
+function myfun(){
+var n1=parseInt(document.getElementById("num1").value);
+switch(n1)
+{
+case n1>=40&&n1<=60:
+alert("pass");
+break;
+case n1>60 &&n1<=75:
+alert("first class");
+break;
+case n1> 75 && n1<=100:
+alert("distinction");
+break;
+
+default:
+alert("fail");//////////////////////in case you cannot give an expression
+
+}
+
+
+}
+
+</script>
+</head>
+<body>
+mark in english 1:<input type="text" name="num1" id="num1">
+
+<button type="button" name="btn" onclick="myfun()">click me</button>
+
+</body>
+</html>
